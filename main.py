@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter.font import Font
 root = Tk()
 root.geometry("500x300")
+root.title("Reg Form")
 
 Label(root, text="PY REGISTRATION FORM",
       font="ar 15 bold").grid(row=0, column=3)
@@ -29,8 +30,14 @@ check_value = IntVar
 name_entry = Entry(root, textvariable=name_value)
 phone_entry = Entry(root, textvariable=phone_value)
 gender_entry = Entry(root, textvariable=gender_value)
-emerency_entry = Entry(root, textvariable=emergency_value)
+emergency_entry = Entry(root, textvariable=emergency_value)
 payment_entry = Entry(root, textvariable=payment_value)
+
+name_entry.grid(row=1, column=3)
+phone_entry.grid(row=2, column=3)
+gender_entry.grid(row=3, column=3)
+emergency_entry.grid(row=4, column=3)
+payment_entry.grid(row=5, column=3)
 
 
 root.mainloop()
