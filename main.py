@@ -9,7 +9,7 @@ def getvals():
     print("Accepted")
 
 
-Label(root, text="PY REGISTRATION FORM",
+Label(root, text="REGISTRATION FORM",
       font="ar 15 bold").grid(row=0, column=3)
 
 name = Label(root, text="Name")
