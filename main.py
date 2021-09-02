@@ -4,6 +4,11 @@ root = Tk()
 root.geometry("500x300")
 root.title("Reg Form")
 
+
+def getvals():
+    print("Accepted")
+
+
 Label(root, text="PY REGISTRATION FORM",
       font="ar 15 bold").grid(row=0, column=3)
 
@@ -41,5 +46,8 @@ payment_entry.grid(row=5, column=3)
 
 check_btn = Checkbutton(text="Remember Me?", variable=check_value)
 check_btn.grid(row=6, column=3)
+
+Button(text="SUBMIT", command=getvals).grid(row=7, column=3)
+
 
 root.mainloop()
