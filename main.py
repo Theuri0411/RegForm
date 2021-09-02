@@ -39,5 +39,7 @@ gender_entry.grid(row=3, column=3)
 emergency_entry.grid(row=4, column=3)
 payment_entry.grid(row=5, column=3)
 
+check_btn = Checkbutton(text="Remember Me?", variable=check_value)
+check_btn.grid(row=6, column=3)
 
 root.mainloop()
