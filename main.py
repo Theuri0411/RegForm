@@ -11,7 +11,11 @@ gender = Label(root, text="Gender")
 emergency = Label(root, text="Emergency")
 payment_mode = Label(root, text="Payment Mode")
 
-name.grid(row=, column=2)
+name.grid(row=1, column=2)
+phone.grid(row=2, column=2)
+gender.grid(row=3, column=2)
+emergency.grid(row=4, column=2)
+payment_mode.grid(row=5, column=2)
 
 
 root.mainloop()
